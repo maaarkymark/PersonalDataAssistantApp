@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    tools:context=".MainMenuActivity" >
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ib_todo"
+        android:contentDescription="todoBtn"
+        android:layout_marginTop="60dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:src="@drawable/todo"/>
+
+    <TextView
+        android:id="@+id/tv_todo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="To Do"
+        app:layout_constraintTop_toBottomOf="@id/ib_todo"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ib_work_hours"
+        android:layout_marginTop="15dp"
+        android:contentDescription="workHoursBtn"
+        app:layout_constraintTop_toBottomOf="@id/tv_todo"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:src="@drawable/hours"/>
+
+    <TextView
+        android:id="@+id/tv_work_hours"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Work Hours"
+        app:layout_constraintTop_toBottomOf="@id/ib_work_hours"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ib_expenses"
+        android:layout_marginTop="15dp"
+        android:contentDescription="expensesBtn"
+        app:layout_constraintTop_toBottomOf="@id/tv_work_hours"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:src="@drawable/expenses"/>
+
+    <TextView
+        android:id="@+id/tv_expenses"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Expenses"
+        app:layout_constraintTop_toBottomOf="@id/ib_expenses"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ib_invoice"
+        android:layout_marginTop="15dp"
+        android:contentDescription="invoiceBtn"
+        app:layout_constraintTop_toBottomOf="@id/tv_expenses"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:src="@drawable/invoice" />
+
+    <TextView
+        android:id="@+id/tv_invoice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Invoice"
+        app:layout_constraintTop_toBottomOf="@id/ib_invoice"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+
+</android.support.constraint.ConstraintLayout>

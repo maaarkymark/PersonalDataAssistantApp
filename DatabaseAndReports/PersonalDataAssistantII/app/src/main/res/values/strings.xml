@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">PDA</string>
+    <string name="app_name_welcome">PersonalDataAssistant</string>
+    <string name="are_you_sure">Are You Sure?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+
+
+</resources>

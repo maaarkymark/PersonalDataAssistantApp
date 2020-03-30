@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.marky.personaldataassistant" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+
+        <!-- WELCOME SCREEN -->
+        <activity
+            android:name=".WelcomeScreen"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- MAIN ACTIVITY -->
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name"
+            android:parentActivityName=".WelcomeScreen" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".WelcomeScreen" />
+        </activity>
+
+        <!-- TO-DO ACTIVITY -->
+        <activity
+            android:name=".ToDoActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name"
+            android:parentActivityName=".WelcomeScreen" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".WelcomeScreen" />
+        </activity>
+
+        <!-- WORK HOURS ACTIVITY -->
+        <activity
+            android:name=".WorkHoursActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name"
+            android:parentActivityName=".WelcomeScreen" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".WelcomeScreen" />
+        </activity>
+
+        <!-- EXPENSES ACTIVITY -->
+        <activity
+            android:name=".ExpensesActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name"
+            android:parentActivityName=".WelcomeScreen" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".WelcomeScreen" />
+        </activity>
+
+        <!-- INVOICE ACTIVITY -->
+        <activity
+            android:name=".InvoiceActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name"
+            android:parentActivityName=".WelcomeScreen" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".WelcomeScreen" />
+        </activity>
+
+        <!-- INVOICE REPORT ACTIVITY -->
+        <activity
+            android:name=".InvoiceReportActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name"
+            android:parentActivityName=".WelcomeScreen" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".WelcomeScreen" />
+        </activity>
+
+        <!-- SETTINGS ACTIVITY -->
+        <activity
+            android:name=".SettingsActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name"
+            android:parentActivityName=".WelcomeScreen" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".WelcomeScreen" />
+        </activity>
+
+        <!-- HELP ACTIVITY -->
+        <activity
+            android:name=".HelpActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name"
+            android:parentActivityName=".WelcomeScreen" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".WelcomeScreen" />
+        </activity>
+
+    </application>
+
+</manifest>

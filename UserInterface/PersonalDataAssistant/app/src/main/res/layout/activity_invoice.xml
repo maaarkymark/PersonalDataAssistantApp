@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="5dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:layout_marginBottom="5dp" >
+
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/todo_arrays"
+        android:prompt="@string/project_prompt"
+        style="@android:style/Widget.Spinner" />
+
+    <Spinner
+        android:id="@+id/spinner2"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/spinner1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/daterange_arrays"
+        android:prompt="@string/daterange_prompt"
+        style="@android:style/Widget.Spinner" />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/createinvoice_btn"
+        android:id="@+id/button10"
+        android:background="@drawable/button"
+        android:layout_below="@+id/spinner2"
+        android:onClick="goInvoiceReport"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="125dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button"
+        android:contentDescription="@string/mainmenu_btn"
+        android:onClick="goBack"
+        android:text="@string/mainmenu_btn" />
+
+
+</RelativeLayout>

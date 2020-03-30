@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:paddingTop="15dp"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:background="@color/colorBackground">
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:paddingTop="10dp"
+        android:paddingBottom="4dp">
+    </Spinner>
+
+    <EditText
+        android:id="@+id/et_work_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:ems="10"
+        android:inputType="textCapWords"
+        android:hint="enter work description" />
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <DatePicker
+            android:id="@+id/datePicker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="-50dp"
+            android:layout_marginLeft="-30dp"
+            android:layout_marginRight="-30dp"
+            android:layout_marginTop="-50dp"
+            android:calendarViewShown="false"
+            android:scaleX=".5"
+            android:scaleY=".5" />
+
+    <!-- Displays timepicker -->
+        <TimePicker
+            android:id="@+id/timePicker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="-50dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginTop="-50dp"
+            android:scaleX=".5"
+            android:scaleY=".5"
+            android:timePickerMode="spinner" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="right">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/record"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="right"
+                android:layout_marginLeft="30dp"
+                android:text="Record Time" />
+
+            <Button
+                android:id="@+id/main_menu"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="right"
+                android:layout_marginLeft="30dp"
+                android:text="Main Menu" />
+        </LinearLayout>
+
+
+        <!-- Displays timepicker -->
+        <TimePicker
+            android:id="@+id/timePicker2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="-50dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="-60dp"
+            android:layout_marginTop="-50dp"
+            android:scaleX=".5"
+            android:scaleY=".5"
+            android:timePickerMode="spinner" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lv_work_hours"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"/>
+</LinearLayout>

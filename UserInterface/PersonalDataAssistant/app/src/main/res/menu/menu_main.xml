@@ -1,0 +1,26 @@
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".WelcomeScreen" >
+
+    <!-- ITEMS IN THE DROPDOWN OVERFLOW MENU -->
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="1"
+        android:title="@string/ui_action_settings"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_help"
+        android:orderInCategory="2"
+        android:title="@string/ui_action_help"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_exit"
+        android:orderInCategory="3"
+        android:title="@string/ui_action_exit"
+        app:showAsAction="never" />
+
+</menu>
